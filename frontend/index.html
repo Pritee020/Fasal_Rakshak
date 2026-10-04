@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fasal Rakshak</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            🌿 Fasal Rakshak
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Plant Analysis</a>
+            <a href="#">About</a>
+        </nav>
+
+        <button class="language-btn">हिंदी | English</button>
+    </header>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero">
+            <h1>Protect Your Crops with AI</h1>
+
+            <p>
+                Detect plant diseases early and get smart solutions
+                for healthier crops.
+            </p>
+        </section>
+
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <!-- Left Card -->
+            <div class="card upload-card">
+
+                <h2>Upload Plant Image</h2>
+
+                <div class="upload-box">
+                    <div class="upload-icon">📷</div>
+
+                    <p>Upload a clear image of your crop leaf</p>
+
+                    <input
+                        type="file"
+                        id="plantImage"
+                        accept="image/*"
+                    >
+                </div>
+
+                <button class="analyze-btn" id="analyzeBtn">
+                    🔍 Analyze Plant
+                </button>
+
+            </div>
+
+
+            <!-- Middle Card -->
+            <div class="card result-card">
+
+                <h2>Plant Analysis</h2>
+
+                <div id="previewContainer" class="preview-container">
+                    <span>Image preview will appear here</span>
+                </div>
+
+                <div class="result-box">
+
+                    <h3 id="plantName">
+                        Plant Name
+                    </h3>
+
+                    <p id="diseaseName">
+                        Disease result will appear here
+                    </p>
+
+                    <div class="confidence">
+                        <span>Confidence</span>
+
+                        <strong id="confidence">
+                            --%
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Card -->
+            <div class="card solution-card">
+
+                <h2>Problem & Solution</h2>
+
+                <h3>🔍 Why did this happen?</h3>
+
+                <p id="cause">
+                    Cause information will appear here.
+                </p>
+
+                <h3>💡 What should you do?</h3>
+
+                <p id="solution">
+                    Recommended solution will appear here.
+                </p>
+
+                <h3>🌱 Recovery</h3>
+
+                <p id="recovery">
+                    Recovery information will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Audio -->
+        <section class="audio-section">
+
+            <h2>🔊 Audio Analysis</h2>
+
+            <p>
+                Listen to the disease information and solution.
+            </p>
+
+            <audio id="audioPlayer" controls>
+                Your browser does not support audio.
+            </audio>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Fasal Rakshak | AI-Powered Crop Protection</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
